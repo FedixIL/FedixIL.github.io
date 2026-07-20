@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fedix | משלוחים מהירים</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts (Rubik for Hebrew) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Rubik', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-xs transition-all duration-300">
+        <div class="max-w-7xl relative mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="text-3xl font-black tracking-wider text-indigo-600 flex items-center gap-2">
+                <i class="fa-solid fa-bolt-lightning text-amber-500 animate-pulse"></i>
+                <span>fedix</span>
+            </a>
+            
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+                <a href="#about" class="hover:text-indigo-600 transition-colors">מי אנחנו</a>
+                <a href="#services" class="hover:text-indigo-600 transition-colors">השירותים שלנו</a>
+                <a href="#reviews" class="hover:text-indigo-600 transition-colors">המלצות</a>
+                <a href="#contact" class="hover:text-indigo-600 transition-colors">צור קשר</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                הזמן משלוח עכשיו
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 md:pt-40 md:pb-28 bg-linear-to-br from-indigo-50 via-white to-amber-50/50 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center md:text-right">
+                <span class="inline-flex items-center gap-2 bg-indigo-100 text-indigo-800 px-4 py-1.5 rounded-full text-sm font-semibold">
+                    <i class="fa-solid fa-rocket"></i> משלוח מהיר בלחיצת כפתור
+                </span>
+                <h1 class="text-4xl md:text-6xl font-black text-slate-900 leading-tight">
+                    הכירו את <span class="text-indigo-600 relative inline-block">fedix<span class="absolute bottom-2 left-0 w-full h-2 bg-amber-400/40 -z-10"></span></span> <br>
+                    חברת המשלוחים שלך
+                </h1>
+                <p class="text-lg text-slate-600 max-w-xl mx-auto md:mx-0">
+                    פדיקס היא חברת משלוחים מודרנית ומתקדמת, שמביאה לכם בדיוק את מה שאתם צריכים, מתי שצריכים. אוכל לחיות המחמד, מנות מהמסעדות הכי טובות, או משלוחים בהתאמה אישית.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-2">
+                    <a href="#services" class="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3.5 rounded-xl font-bold text-center transition-all shadow-lg">
+                        לצפייה בשירותים
+                    </a>
+                    <a href="#reviews" class="bg-white border-2 border-slate-200 hover:border-indigo-600 px-8 py-3.5 rounded-xl font-bold text-center transition-all flex items-center justify-center gap-2">
+                        מה אומרים עלינו? <i class="fa-solid fa-arrow-left text-sm"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Interactive Visual/Image Placeholder -->
+            <div class="relative flex justify-center items-center">
+                <div class="absolute w-72 h-72 bg-indigo-400/20 rounded-full blur-3xl -top-10 -right-10"></div>
+                <div class="absolute w-72 h-72 bg-amber-400/20 rounded-full blur-3xl -bottom-10 -left-10"></div>
+                
+                <div class="relative bg-white p-8 rounded-3xl shadow-2xl border border-slate-100 max-w-md w-full overflow-hidden group">
+                    <div class="flex justify-between items-center mb-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-full bg-indigo-600 flex items-center justify-center text-white text-xl shadow-md">
+                                <i class="fa-solid fa-truck-fast"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800">המשלוח בדרך!</h4>
+                                <p class="text-xs text-slate-400">עוד כמה דקות אצלך...</p>
+                            </div>
+                        </div>
+                        <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded-md font-bold">פעיל</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
+                            <div class="bg-indigo-600 h-full w-4/5 rounded-full animate-pulse"></div>
+                        </div>
+                        <div class="border-t border-dashed border-slate-200 pt-4 flex justify-between text-sm">
+                            <span class="text-slate-500">סטטוס:</span>
+                            <span class="font-bold text-indigo-600">שליח קרוב ליעד</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl md:text-5xl font-black text-slate-900">השירותים המיוחדים שלנו</h2>
+                <p class="text-slate-500 text-lg">אנחנו ב-fedix דואגים לכך שכל משלוח יגיע במהירות, בבטחה ובאיכות הגבוהה ביותר.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1: Pet Food -->
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl shadow-xs hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-bone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">משלוחי אוכל לחיות</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        האוכל של החבר הכי טוב שלכם נגמר? אל דאגה! אנחנו מגיעים עד אליכם עם כל סוגי המזון והציוד לחיות מחמד במהירות שיא.
+                    </p>
+                </div>
+
+                <!-- Service 2: Restaurants -->
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl shadow-xs hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">משלוחים ממסעדות</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        רעבים? פדיקס מביאה לכם את המנות האהובות עליכם מהמסעדות המובילות בעיר, ישר שולחן שלכם, חם וטרי כאילו יצא עכשיו מהמטבח.
+                    </p>
+                </div>
+
+                <!-- Service 3: Special Orders -->
+                <div class="bg-slate-50 border border-slate-100 p-8 rounded-2xl shadow-xs hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">משלוחים מיוחדים</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        צריכים להעביר חבילה דחופה? מסמך חשוב? או קניות מיוחדות? השירות המותאם אישית שלנו דואג להעביר כל דבר בבטחה.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-slate-50 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-3xl md:text-5xl font-black text-slate-900">מה הלקוחות אומרים עלינו</h2>
+                <p class="text-slate-500 text-lg">הביטחון והשביעות רצון שלכם הם ההצלחה שלנו. הנה כמה חוות דעת מלקוחות מרוצים:</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Review 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 italic">
+                            "שירות מדהים! הזמנתי שק אוכל ענק לכלב שלי ותוך חצי שעה השליח כבר דפק בדלת. פשוט הצילו אותי, מומלץ בחום!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-6 mt-6 border-t border-slate-100">
+                        <div class="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold">דנ</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">דניאל נ.</h4>
+                            <p class="text-xs text-slate-400">לקוח קבוע</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 italic">
+                            "המשלוחים מהמסעדות תמיד מגיעים חמים ומהר מאוד. השליחים אדיבים והשירות פשוט יוצא מן הכלל בכל פעם מחדש."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-6 mt-6 border-t border-slate-100">
+                        <div class="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold">מי</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">מיכל י.</h4>
+                            <p class="text-xs text-slate-400">חובבת מסעדות</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-slate-100 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 italic">
+                            "הייתי צריכה משלוח מיוחד ודחוף של מסמכים מהמשרד לבית. הכל התנהל בצורה מקצועית, מהירה ובמחיר הוגן ביותר. שירות מעולה!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-6 mt-6 border-t border-slate-100">
+                        <div class="w-12 h-12 rounded-full bg-slate-200 flex items-center justify-center text-slate-500 font-bold">רו</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">רוני א.</h4>
+                            <p class="text-xs text-slate-400">לקוחה עסקית</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Order Form Section -->
+    <section id="contact" class="py-20 bg-white px-6">
+        <div class="max-w-3xl mx-auto bg-linear-to-br from-indigo-900 to-slate-900 text-white p-8 md:p-12 rounded-3xl shadow-2xl relative overflow-hidden">
+            <div class="absolute w-64 h-64 bg-indigo-500/20 rounded-full blur-2xl -bottom-20 -right-20"></div>
+            
+            <div class="relative z-10 space-y-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-black">מוכנים להזמין את המשלוח הבא?</h2>
+                <p class="text-indigo-200 max-w-xl mx-auto"></p>
+                
+                <form class="space-y-4 text-right pt-4 max-w-lg mx-auto" onsubmit="event.preventDefault(); alert('תודה שביקרתם אותנו');">
+                    <div>
+                        <label class="block text-sm font-medium text-indigo-200 mb-1">שם מלא</label>
+                        <input type="text" required class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-hidden focus:ring-2 focus:ring-amber-400 transition-all" placeholder="ישראל ישראלי">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-indigo-200 mb-1">מספר טלפון</label>
+                        <input type="tel" required class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-hidden focus:ring-2 focus:ring-amber-400 transition-all" placeholder="050-1234567">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-indigo-200 mb-1">סוגי משלוחים</label>
+                        <select class="w-full bg-slate-800 border border-white/20 rounded-xl px-4 py-3 text-white focus:outline-hidden focus:ring-2 focus:ring-amber-400 transition-all">
+                            <option class="text-slate-800">אוכל לחיות מחמד</option>
+                            <option class="text-slate-800">משלוח ממסעדה</option>
+                            <option class="text-slate-800">משלוח מיוחד / אחר</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-black py-4 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 cursor-pointer mt-6">
+                       תודה שביקרתם אותנו<i class="fa-solid fa-paper-plane mr-2 text-sm"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 px-6 border-t border-slate-800 text-center">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-sm">© 2026 fedix. כל הזכויות שמורות לחברת פדיקס משלוחים.</p>
+            <div class="flex gap-6 text-xl">
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
+  <p class="text-sm">© 2026 fedix. כל הזכויות שמורות לחברת פדיקס משלוחים.</p>
